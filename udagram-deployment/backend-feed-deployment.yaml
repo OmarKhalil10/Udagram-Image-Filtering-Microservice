@@ -13,8 +13,8 @@ spec:
         run: api-feed
     spec:
       containers:
-      - name: api-feed
-        image: docker.io/omarkhalil10/udagram-api-feed:v4a
+      - name: udagram-api-feed
+        image: omarkhalil10/udagram-api-feed:v4a
         ports:
         - containerPort: 8080
         resources:

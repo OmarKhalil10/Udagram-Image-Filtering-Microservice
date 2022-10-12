@@ -13,7 +13,7 @@ spec:
         run: frontend
     spec:
       containers:
-      - name: frontend
+      - name: udagram-frontend
         image: omarkhalil10/udagram-frontend:v4a
         ports: 
         - containerPort: 80
