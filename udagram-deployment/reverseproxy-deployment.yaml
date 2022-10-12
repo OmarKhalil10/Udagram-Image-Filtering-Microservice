@@ -5,18 +5,18 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: reverseproxy
+      name: reverseproxy
   replicas: 2
   template:
     metadata:
       labels:
-        run: reverseproxy
+        name: reverseproxy
     spec:
       containers:
       - name: reverseproxy
-        image: docker.io/omarkhalil10/reverseproxy:v4a
+        image: omarkhalil10/reverseproxy:v4a
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources:
           limits:
             cpu: 500m

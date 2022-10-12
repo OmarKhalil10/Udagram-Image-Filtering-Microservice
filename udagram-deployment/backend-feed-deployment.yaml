@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-feed
+  name: api-feed
 spec:
   selector:
     matchLabels:
-      run: backend-feed
+      run: api-feed
   replicas: 2
   template:
     metadata:
       labels:
-        run: backend-feed
+        run: api-feed
     spec:
       containers:
-      - name: backend-feed
+      - name: api-feed
         image: docker.io/omarkhalil10/udagram-api-feed:v4a
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources:
           limits:
             cpu: 500m
